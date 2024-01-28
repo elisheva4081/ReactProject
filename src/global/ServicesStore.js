@@ -1,4 +1,4 @@
-import { observable, makeObservable, action, computed } from 'mobx';
+import { observable, makeObservable, action } from 'mobx';
 class ServicesStore {
   services = [{ name: "סופש חלומי", description: "סופש זוגי בסויטה במלון", price: 4000 }, { name: "סופש חלומי", description: "סופש זוגי בסויטה במלון", price: 4000 }]
   constructor() {

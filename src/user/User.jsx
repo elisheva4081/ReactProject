@@ -11,7 +11,6 @@ import DialogActions from '@mui/material/DialogActions';
 import { useState, useEffect } from 'react'
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
-
 import './User.css'
 import DetailsToShow from '../detailsToShow/DetailsToShow.jsx'
 import Services from '../services/Services'

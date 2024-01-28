@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import { PasswordSharp } from '@mui/icons-material';
-import react, { useState } from "react";
+import  { useState } from "react";
 import Swal from 'sweetalert2'
 import { observer } from 'mobx-react';
 import GlobalState from '../global/globalState';

@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react';
-import GlobalState from '../global/globalState';
-import Paper from '@mui/material/Paper';
+// import GlobalState from '../global/globalState';
+// import Paper from '@mui/material/Paper';
 import ServicesStore from '../global/ServicesStore'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';

@@ -1,5 +1,4 @@
-import { observable, makeObservable, action, computed } from 'mobx';
-import react, { useState } from "react";
+import { observable, makeObservable, action } from 'mobx';
 
 class GlobalState {
   isAdmin=false;

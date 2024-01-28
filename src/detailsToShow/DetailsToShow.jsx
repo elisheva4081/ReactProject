@@ -9,12 +9,10 @@ import { useEffect } from "react";
 const DetailsToShow = (observer(()=> {
   useEffect(() => {
     BusinessDetailsStore.initialBusinessDetails()
-       
   }, []);
 
   return (
     <>
-     
 <img src={BusinessDetailsStore.business.logo} alt="logo" className='logo'/>
 <h1>{BusinessDetailsStore.business.name}</h1>
 <h2>{BusinessDetailsStore.business.address}</h2>
@@ -23,7 +21,6 @@ const DetailsToShow = (observer(()=> {
 {GlobalState.isAdmin ?
 <Button variant="text" class="botton" onClick={()=>BusinessDetailsStore.setIsForEdit(true)}>for edit</Button>:undefined
 }
-
     </>
   )
 }))

@@ -1,4 +1,4 @@
-import { observable, makeObservable, action, computed } from 'mobx';
+import { observable, makeObservable, action } from 'mobx';
 import Swal from 'sweetalert2'
 
 class MeetingsStore{
@@ -18,15 +18,12 @@ class MeetingsStore{
       headers: {
         "Content-Type": "application/json",
       },
-
     }
     );
 
-    // console.log(response.status)
     if (response.status === 200) {
       Swal.fire({
         title: "The meeting was scheduled!",
-        // text: "You clicked the button!",
         icon: "success"
       });
       this.meetings.push(this.meeting);
@@ -50,10 +47,6 @@ class MeetingsStore{
     const data = await response.json();
    
       this.meetings = data;
-   
     }
-
-
-  
 }
 export default new MeetingsStore()
